@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, rgba(28, 151, 239, 0.473), rgba(230, 90, 20, 0.369),rgba(250, 242, 10, 0.3)), url(./images/world.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 100px 10px 0 10px;
+ 
+}
+
+#search {
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  outline: none;
+}
+
+#list li {
+  border: 1px solid #ddd;
+  padding: 12px;
+  background-color: #f6f6f6;
+  display: block;
+}
+
+#list li:hover {
+  background-color: #eee;
+}
+
+/* start of Footer styling */
+
+footer {
+  position: absolute;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+  text-align: center;
+  font-size: .5rem;
+  font-weight: 700;
+  margin: 5px 0 0 0;
+  bottom: 0;
+}
+
+.project {
+  margin: 3px auto;
+  font-size: 18px;
+  color: #000;
+  font-weight: 700;
+}
+/* Animated text styling  */
+footer p, footer span {
+  margin: 10px 0 0 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(right, #0c2bf3, #0d0c0c, #376ebc, #fd25ef);
+  background-size: 700px;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  background-clip: text;
+  -webkit-animation: gradient-move 4.9s linear infinite;
+  animation: gradient-move 2s infinite alternate-reverse;
+}
+
+footer p:hover {
+  -webkit-animation: gradient-move 2s infinite alternate-reverse;
+}
+
+@-webkit-keyframes gradient-move {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 700px 0; } 
+}
+/* End of Animated Text Styling */
+
+
+.social-media {
+  margin: 5px auto;
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.social-media a{
+  margin: 20px;
+
+}
+.social-media a:nth-child(1){
+    color:rgb(42, 117, 197)
+  }
+.social-media a:nth-child(2){
+    color:rgb(16, 37, 37)
+  }
+.social-media a:nth-child(3){
+    color:rgb(236, 73, 171)
+}
+.social-media a:nth-child(1):hover{
+  color: #fff;
+  background-color: rgb(42, 117, 197)
+}
+.social-media a:nth-child(2):hover{
+    color:rgb(238, 24, 24)
+}
+.social-media a:nth-child(3):hover{
+    color: rgb(26, 208, 62);
+}
+
